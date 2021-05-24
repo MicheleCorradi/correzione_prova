@@ -43,7 +43,7 @@ class Catalogo():
 
     def stampa_catalogo(self):
         for immobile in self.immobili:
-            immobile.stampa.immobile()
+            immobile.stampa_immobile()
 
 
     def salva(self):
@@ -66,6 +66,9 @@ generale.aggiungi_immobile(casa2)
 
 #generale.cerca_immobile("Via Roma")
 
+generale.salva()
+generale.carica()
 
+generale.stampa_catalogo()
 
         
